@@ -23,3 +23,26 @@ let myObj = {
 const myFunction = function(){
         console.log("Hello World");
 }
+
+//*******************Memory******************************/
+
+//Stack (Primitive), Heap(Non Primitive)
+
+let myVar = "TakeThisValue"
+let anotherVar = myVar
+anotherVar = 'UpdateValue'
+
+console.log(myVar);
+console.log(anotherVar);
+
+let userOne = {
+    email: "aehsan.shaikh@gmail.com",
+    upi: "aehsan.shaikh@hdfc"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "aehsan.shaikh@yahoo.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
